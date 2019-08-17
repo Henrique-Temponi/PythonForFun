@@ -15,6 +15,7 @@ Like this!
 '''
 
 # so recapping, use # for a single line comment, """ - for a doc comment, and a ''' - for a multiple comment!
+# SIDENOTE: you can use both """ and ''' for a doc comment, it all comes down to which one you like better
 
 '''
 Quiz time!
