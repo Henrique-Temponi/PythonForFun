@@ -8,4 +8,4 @@ NOTE: it's quite always a input
 x = input("input a number: ")
 print(x, type(x))
 
-# if you want to convert it's value just remember to use the type casting
+# if you want to convert it's value just remember to use the type castin
