@@ -73,3 +73,51 @@ else:
 now, if python finds a true conditional, it will stop testing the rest of conditionals
 and exit the code
 """
+
+# all right so, we cleared the syntax, let move on to mathematical operations
+# we can use the following operators: ==, >, <, >=, <= , !=
+
+"""
+we use them like like in math
+    == - equals (10 == 10) = True
+    > - greater then (10 > 9) = True
+    >= - greater or equal then (10 >= 10) = True
+    < - less then - (9 < 10) = True
+    <= = less or equal then (10 <= 10) = True
+    != - different then (9 != 10) = True
+"""
+
+conditional = 10 == 10  # change the value here, and see what happens with the code below
+
+if conditional:
+    print("This conditional is True")
+else:
+    print("This conditional is False")
+
+"""
+alright, now for the logical operators
+we have the following:
+    and - only true if both conditions are true
+    or - only true if one of the conditions are true
+    not - negates a condition
+    in - true if there is the condition "in" a selected element
+    
+these are kinda different but really powerful
+let's try them out below
+"""
+
+conditionala = True
+conditionalb = not True
+
+if conditionalb and conditionala:
+    print("Both conditions are True")
+elif conditionala or conditionalb:
+    print("One of the conditions are true")
+else:
+    print("Neither of the conditions are true ")
+
+# the in operator is a little different
+text = "banana"
+
+if "a" in text:  # one of the uses could look something like this
+    print("There is a in banana")
