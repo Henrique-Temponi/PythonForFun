@@ -22,3 +22,7 @@ print(f"{x:&^10}")  # will add 10 & at center of the number
 
 y = 2.76
 print(f"{y:.1f}")  # formats the float value to have a single digit after the dot (it rounds the number)
+
+print()  # just to break a line
+# you can also do this if .format() function
+print("{x:#>10}\n{x:#<10}\n{x:#^10} and {y:.1f}".format(x=10, y=2.76))
