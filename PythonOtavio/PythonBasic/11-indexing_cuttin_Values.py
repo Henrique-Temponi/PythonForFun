@@ -34,6 +34,26 @@ and you can go either to the positive side or negative
 
 print(x[0], x[-1], x[-2], x[-3], x[-4], x[-5])  # this should print the whole word backwards
 
-print(x[0:6:3])
+"""
+you can use teh cutting function like this
+first the string you want to cut,
+the open the brackes
+at this point it should look something like this
+x[],
+now 
+so we can add a few operators
+x[y,z,p]
+where y = the start of the cutting
+      z = the end of the cutting
+      p = the steps
+
+the steps mean that how it's going to walk in the string
+"""
+print(x[0:6:3])  # take this exemple for instance, it will start at 0, going all the say to 6, stepping 3 by 3
+
+# we can use one, two, or all three flags to say what we want,
+# just leave it empty, it should look something like this
+
+print(x[::2])  # here we are saying that we want the default start and end, but stepping two by two 
 
 # TODO: check if this is updated
