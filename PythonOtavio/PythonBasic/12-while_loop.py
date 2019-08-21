@@ -31,7 +31,7 @@ below are a few codes using while
 # a database register
 x = 0
 
-while x = 10:
+while x < 10:
 
     print()
 
@@ -57,3 +57,35 @@ while x < 10:
         print(f"Even number: {x}")
 
     x += 1  # remember the indentation, not to be inside another block, 
+
+"""
+right so lets look at some special words,
+and they are the continue and break
+the continue word tells to python to jump the current loop and go for the next one, if avaliable
+the break word tells to python to break. that is it!, it just the current loop and executes the rest of the 
+program
+
+let's se some examples below
+"""
+x = 10
+
+while x > 0:
+
+    if x == 1:
+        print("The value is one")  # note that if this print was after the break, it wont be executed
+        break  # if the value of is 1, stop the loop
+    else:
+        print("the value is not one")
+    
+    x = x - 1
+
+x = 0
+
+while x < 10:
+
+    if x % 2 == 0:
+        continue  # wont stop the loop, but it will jump to the next loop interation
+    else:
+        print("Current number is odd")
+
+    x = x + 1
