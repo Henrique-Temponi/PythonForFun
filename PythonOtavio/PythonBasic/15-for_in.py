@@ -30,9 +30,10 @@ we also have the enumerete function, which creates a index, for the loop
 print()
 
 x = "banana"
-for i in enumerete(x):
-    print(f"{i} = {x[i]}") 
-
+for i, p in enumerate(x):
+    print(f"{i} = {x[i]}")
+    # print(type(i))
+    # print(type(p))
 # we can also use it in the string itself
 
 for c in x:
