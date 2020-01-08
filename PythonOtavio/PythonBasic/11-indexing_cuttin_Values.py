@@ -49,11 +49,11 @@ where y = the start of the cutting
 
 the steps mean that how it's going to walk in the string
 """
-print(x[0:6:3])  # take this exemple for instance, it will start at 0, going all the say to 6, stepping 3 by 3
+print(x[0:6:3])  # take this exemple for instance, it will start at 0, going all the way to 6, stepping 3 by 3
 
 # we can use one, two, or all three flags to say what we want,
 # just leave it empty, it should look something like this
 
-print(x[::2])  # here we are saying that we want the default start and end, but stepping two by two 
+print(x[::2])  # here we are saying that we want the default start and end, but stepping 2 by 2
 
 # TODO: check if this is updated

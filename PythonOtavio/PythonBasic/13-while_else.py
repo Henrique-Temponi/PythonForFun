@@ -41,7 +41,7 @@ acuu = 0
 
 while x < 10:
     
-    acuu = acuu + x  #  this will get the total sum of 10
+    acuu = acuu + x  # this will get the total sum of 10
     
     x += 1
 else:

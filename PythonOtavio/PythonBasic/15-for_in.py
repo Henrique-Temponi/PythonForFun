@@ -32,6 +32,7 @@ print()
 x = "banana"
 for i, p in enumerate(x):
     print(f"{i} = {x[i]}")
+    print(f"{i} = {p}")  # you could do both ways, but this one is better, if you want full advantage over python
     # print(type(i))
     # print(type(p))
 # we can also use it in the string itself

@@ -36,7 +36,7 @@ while x < 10:
     print()
 
     name = input("Enter a name: ")
-    birth = int(intput("Enter you birth date: "))
+    birth = int(input("Enter you birth date: "))
 
     if birth != 0:
 
@@ -51,7 +51,7 @@ x = 0
 
 while x < 10:
 
-    if x % 2 !== 0:
+    if x % 2 != 0:
         print(f"odd number: {x}")
     else:
         print(f"Even number: {x}")

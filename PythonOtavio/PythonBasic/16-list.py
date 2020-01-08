@@ -16,6 +16,9 @@ putting the index into the list we get:
 -6 5 4 3 2 1
 
 this index is just like the string index, now how we define it:
+Lists in python can hold any type of value:
+x =[1, 2, 3, True, False, 'f', 0.0]
+so this list have a int, boolean, string and real values, anything goes in lists!
 """
 
 x = [0, 1, 2, 3, 4, 5]  # just like this, now x is a list of integers (int)
@@ -50,16 +53,26 @@ print(y)
 y = x[::2]
 print(y)
 
-print("=======================")
-# we can also append the list
-x.append(1)  # append would be something like, add after everything
-print(x)
+# you can add different lists with each other
+z = x + y
+print(z)
 
 # just to clean up x we just reset it, to reset just do this
 x = []
+print(x)
+
+
+print("=======================")
+# we can also append the list
+x.append(1)  # append would be something like, add after everything
+x.append(True)
+x.append("test")
+print(x)
+
+x = []
 
 # extent is useful as well
-x.extend(range(10))  # extend function, receives a iterable object and add it to the list
+x.extend(range(5))  # extend function, receives a iterable object and add it to the list
 # and it can be configured with, start, ends, step
 print(x)
 
@@ -67,6 +80,41 @@ print(x)
 x.insert(2, "X")  # will add a X at the second index
 print(x)
 
-# also, we have a list with whatever type we want in a single list
+# the index can be any valid index
+x.insert(0, "python")
+x.insert(3, True)
+# x.insert(10, "erro") # this will cause an error
 
-# TODO: pop, push, del, max, min, print by index, create by iterable, hangman
+# we can also delete elements from the list using del
+# del function works like string cutting ( we can chose a start, end and the stepping value )
+
+x = []
+x.extend(range(10))  # create a list with 10 elements
+print(x)
+del(x[::2])  # delete from start to end, and stepping 2
+del(x[0:1])  # delete from start and stop ate index 1, meaning only the first element will get deleted
+del(x[0])  # or you could just give the index value
+
+# remember you can use the string cutting techniques
+
+# let's suppose that you want to delete the last element in the list,
+# we could do a del(x[-1]), but there is a build-in function for that
+# which is the pop function,
+x = [1, 2, 3, 4, 5, 6]
+x.pop()
+print(x)
+
+# so now the last element will be deleted
+
+# Max and Min functions, they are self explained by their names, but let's go over it
+# max will return the  highest value
+# min will return the lowest value
+print(max(x))
+print(min(x))
+
+# but what if the values are not numeric, what if they are, strings? then the max will return in alphabetical order
+print(max("Mike", "John", "Vicky"))
+print(min("Mike", "John", "Vicky"))
+
+
+# TODO: hangman
