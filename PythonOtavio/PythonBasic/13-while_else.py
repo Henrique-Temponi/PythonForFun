@@ -1,6 +1,7 @@
 """
 now, we will talk more about the while else code of block
 the while block we have seen it before, now let's combo that with a else
+this else, can be used with for loops as well, we'll see them in just a moment
 
 """
 x = 0
